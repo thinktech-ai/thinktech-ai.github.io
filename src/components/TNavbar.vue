@@ -1,12 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-xl">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img src="../assets/logo.svg" alt="logo" width="24" height="24" class="d-inline-block align-text-top">
-        Thinktech
+        ThinkTech
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -22,38 +23,42 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <router-link class="dropdown-item " to="/bigdata/sql-lineage" active-class="active" exact>SQL Lineage</router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item " to="#" active-class="active" exact>Data Quality Analyze
+                <router-link class="dropdown-item " to="/bigdata/sql-lineage" active-class="active" exact>SQL Lineage
                 </router-link>
               </li>
-              <li>
-                <router-link class="dropdown-item " to="#" active-class="active" exact>Data Profiling</router-link>
-              </li>
-              <li>
-                <router-link class="dropdown-item " to="#" active-class="active" exact>Data Integration</router-link>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <router-link class="dropdown-item" to="#" active-class="active" exact>Dev Tools</router-link>
-              </li>
+<!--              <li>-->
+<!--                <router-link class="dropdown-item " to="#" active-class="active" exact>Data Quality Analyze-->
+<!--                </router-link>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <router-link class="dropdown-item " to="#" active-class="active" exact>Data Profiling</router-link>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <router-link class="dropdown-item " to="#" active-class="active" exact>Data Integration</router-link>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <hr class="dropdown-divider">-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <router-link class="dropdown-item" to="#" active-class="active" exact>Dev Tools</router-link>-->
+<!--              </li>-->
             </ul>
           </li>
           <li class="nav-item">
-            <router-link to="/price" class="nav-link " active-class="active" exact>Price</router-link>
+            <router-link to="/price" class="nav-link " active-class="active" exact>Pricing</router-link>
           </li>
-          <li class="nav-item">
-            <router-link to="/about" class="nav-link " active-class="active" exact>About</router-link>
-          </li>
+
           <li class="nav-item">
             <router-link to="/contact" class="nav-link " active-class="active" exact>Contact</router-link>
           </li>
+
           <li class="nav-item">
-            <a href="https://shenbinglife.github.io/" target="_blank" class="nav-link">Blog</a>
+            <router-link to="/about" class="nav-link " active-class="active" exact>About</router-link>
           </li>
+
+          <!--          <li class="nav-item">-->
+          <!--            <a href="https://shenbinglife.github.io/" target="_blank" class="nav-link">Blog</a>-->
+          <!--          </li>-->
 
         </ul>
         <form class="d-flex" role="search">
@@ -89,6 +94,16 @@ export default {
 .navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.dropdown:hover>.dropdown-menu {
+
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+
+  pointer-events: none;
 }
 
 </style>

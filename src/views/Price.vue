@@ -3,7 +3,10 @@
   <main class="container">
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Pricing</h1>
-      <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+      <p class="fs-5 text-muted">
+        We have tailored our pricing strategy to ensure you receive the best value for your investment while enjoying
+        unparalleled quality and performance.
+      </p>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -15,9 +18,9 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
+              <li>Base service supported</li>
+              <li>100 requests per day</li>
+              <li>1 Team supported</li>
               <li>Help center access</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
@@ -32,10 +35,10 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
+              <li>Advanced service support</li>
+              <li>Unlimited requests</li>
+              <li>Unlimited Teams</li>
+              <li>Customer service</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
           </div>
@@ -49,10 +52,10 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
+              <li>Private deployment</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
+              <li>&nbsp;</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
           </div>
@@ -74,45 +77,71 @@
         </thead>
         <tbody>
         <tr>
-          <th scope="row" class="text-start">Public</th>
-          <td><BIconCheck2 class="check"/></td>
-          <td><BIconCheck2 class="check"/></td>
-          <td><BIconCheck2 class="check"/></td>
+          <th scope="row" class="text-start">API Interface</th>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="text-start">Private</th>
-          <td></td>
-          <td><BIconCheck2 class="check"/></td>
-          <td><BIconCheck2 class="check"/></td>
+          <th scope="row" class="text-start">Team Work</th>
+          <td><BIconCheck2 class="t-icon"/></td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
         </tr>
         </tbody>
 
         <tbody>
         <tr>
-          <th scope="row" class="text-start">Permissions</th>
+          <th scope="row" class="text-start">SQL Lineage</th>
           <td>
-            <BIconCheck2 class="check"/>
-            </td>
-          <td><BIconCheck2 class="check"/></td>
-          <td><BIconCheck2 class="check"/></td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="text-start">Sharing</th>
+          <th scope="row" class="text-start">Customer Service</th>
           <td></td>
-          <td><BIconCheck2 class="check"/></td>
-          <td><BIconCheck2 class="check"/></td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="text-start">Unlimited members</th>
+          <th scope="row" class="text-start">Unpublished</th>
           <td></td>
-          <td><BIconCheck2 class="check"/></td>
-          <td><BIconCheck2 class="check"/></td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="text-start">Extra security</th>
+          <th scope="row" class="text-start">Unpublished</th>
           <td></td>
-          <td></td>
-          <td><BIconCheck2 class="check"/></td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
+          <td>
+            <BIconCheck2 class="t-icon"/>
+          </td>
         </tr>
         </tbody>
       </table>
@@ -132,8 +161,5 @@ import {
 </script>
 
 <style scoped>
-.check {
-  width: 24px;
-  height: 24px;
-}
+
 </style>

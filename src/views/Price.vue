@@ -2,7 +2,7 @@
 
   <main class="container">
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal">Pricing</h1>
+<!--      <h1 class="display-4 fw-normal">Pricing</h1>-->
       <p class="fs-5 text-muted">
         We have tailored our pricing strategy to ensure you receive the best value for your investment while enjoying
         unparalleled quality and performance.

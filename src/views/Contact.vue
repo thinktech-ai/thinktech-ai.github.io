@@ -35,7 +35,9 @@
           </div>
 
           <!-- Submit button -->
-          <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+          <div class="row">
+            <button type="submit" class="col-md-4 offset-md-4 btn btn-primary btn-submit">Submit</button>
+          </div>
         </form>
       </div>
     </div>
@@ -69,4 +71,9 @@
 .btn-submit:hover {
   background-color: #0056b3;
 }
+h2 {
+  color: #007bff;
+}
 </style>
+<script setup>
+</script>

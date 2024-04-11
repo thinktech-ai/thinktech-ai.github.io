@@ -14,22 +14,22 @@
       <div class="carousel-item active" data-bs-interval="2000">
         <img src="@/assets/imgs/carousel/01.jpg" class="d-block w-100 carousel-image" alt="">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Innovation Leaders</h5>
-          <p>ThinkTech innovates with transformative big data and AI solutions.</p>
+          <h5>{{ $t('carousel.title_1')}}</h5>
+          <p>{{ $t('carousel.desc_1')}}</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="@/assets/imgs/carousel/02.jpg" class="d-block w-100 carousel-image" alt="">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Data Mastery</h5>
-          <p>The company specializes in data management for strategic insights.</p>
+          <h5>{{ $t('carousel.title_2')}}</h5>
+          <p>{{ $t('carousel.desc_2')}}</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
         <img src="@/assets/imgs/carousel/03.jpg" class="d-block w-100 carousel-image" alt="">
         <div class="carousel-caption d-none d-md-block">
-          <h5>AI Empowerment</h5>
-          <p>ThinkTech empowers businesses with efficient AI-driven automation tools.</p>
+          <h5>{{ $t('carousel.title_3')}}</h5>
+          <p>{{ $t('carousel.desc_3')}}</p>
         </div>
       </div>
     </div>

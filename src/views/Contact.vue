@@ -2,41 +2,42 @@
   <section class="py-5">
     <div class="container">
       <div class="form-container">
-        <h2 class="text-center mb-4 ">Contact Us</h2>
-        <p class="lead text-muted">We're here to help. Whether you have a question, need assistance, or just want to
-          learn more, don't hesitate to reach out. We typically respond within 1-3 business days.</p>
+        <h2 class="text-center mb-4 ">{{ $t('contact.title') }}</h2>
+        <p class="lead text-muted">{{ $t('contact.desc') }}</p>
         <form>
           <!-- Name input -->
           <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">{{ $t('form.name') }}</label>
             <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
-            <div id="nameHelp" class="form-text">Please enter your full name.</div>
+            <div id="nameHelp" class="form-text">{{$t('contact.form.name.text')}}</div>
           </div>
 
           <!-- Phone number input -->
           <div class="mb-3">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                   aria-describedby="phoneHelp" required>
-            <div id="phoneHelp" class="form-text">Format: 123-456-7890</div>
+            <label for="phone" class="form-label">{{ $t('form.phone') }}</label>
+            <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp" required >
+            <div id="phoneHelp" class="form-text">{{$t('contact.form.phone.text')}}</div>
           </div>
 
           <!-- Email input -->
           <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label">{{ $t('common.email') }}</label>
             <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <div id="emailHelp" class="form-text">{{$t('contact.form.email.text')}}</div>
           </div>
 
           <!-- Company input -->
           <div class="mb-3">
-            <label for="company" class="form-label">Company</label>
+            <label for="company" class="form-label">{{ $t('form.company') }}</label>
             <input type="text" class="form-control" id="company" required>
           </div>
 
           <!-- Submit button -->
           <div class="row">
-            <button type="submit" class="col-md-4 offset-md-4 btn btn-primary btn-submit">Submit</button>
+            <button type="submit" class="col-md-4 offset-md-4 btn btn-primary btn-submit">{{
+                $t('form.submit')
+              }}
+            </button>
           </div>
         </form>
       </div>
@@ -71,6 +72,7 @@
 .btn-submit:hover {
   background-color: #0056b3;
 }
+
 h2 {
   color: #007bff;
 }

@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-xl">
-      <a class="navbar-brand" href="/">
-        <img src="../assets/logo.svg" alt="logo" width="24" height="24" class="d-inline-block align-text-top">
-        ThinkTech
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="@/assets/logo.svg" alt="logo" width="36px" height="36px" class="d-inline-block align-text-top">
+        <span class="text-dark">ThinkTech</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

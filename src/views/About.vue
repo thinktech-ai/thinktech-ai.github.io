@@ -45,9 +45,9 @@
     <div class="contact-info">
       <p>Ready to see how ThinkTech can transform your business? Reach out to us for a consultation and let's build a brighter future together.</p>
       <ul class="list-unstyled">
-        <li><i class="fas fa-phone"></i> Phone: (555) 123-4567</li>
-        <li><i class="fas fa-envelope"></i> Email: info@thinktech.com</li>
-        <li><i class="fas fa-map-marker-alt"></i> Address: 123 Tech Avenue, Innovation Park, Future City</li>
+        <li><i class="fas fa-phone"></i> Phone: +86 18014856340</li>
+        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:shenbinglife@163.com">shenbinglife@163.com</a></li>
+        <li><i class="fas fa-map-marker-alt"></i> Address: Nanjing, Jiangsu, China</li>
       </ul>
     </div>
   </main>

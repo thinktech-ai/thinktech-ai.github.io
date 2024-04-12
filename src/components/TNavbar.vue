@@ -61,7 +61,7 @@
           <!--          </li>-->
 
         </ul>
-        <form class="d-flex" role="search">
+        <div class="d-flex" role="search">
           <button class="btn" @click="switchLanguage"
                   data-bs-placement="bottom"
                   data-bs-toggle="tooltip"
@@ -72,7 +72,7 @@
 <!--            <BIconSearch/>-->
 <!--          </button>-->
           <button class="btn">{{ $t('navbar.login') }}</button>
-        </form>
+        </div>
       </div>
     </div>
   </nav>
@@ -82,6 +82,8 @@
 import {BIconGlobe, BIconSearch} from "bootstrap-icons-vue";
 import { Tooltip } from 'bootstrap'
 import {onMounted} from "vue";
+import { useI18n } from "vue-i18n";
+
 onMounted(() => {
   new Tooltip(document.body, {
     selector: "[data-bs-toggle='tooltip']",
@@ -89,12 +91,14 @@ onMounted(() => {
 })
 
 
+const {locale} = useI18n()
 function switchLanguage() {
   if (localStorage.getItem('lang') === 'en') {
     localStorage.setItem('lang', 'zh')
   } else {
     localStorage.setItem('lang', 'en')
   }
+  locale.value = localStorage.getItem('lang')
 }
 </script>
 <script>

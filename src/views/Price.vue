@@ -50,7 +50,7 @@
             <h4 class="my-0 fw-normal">{{$t('pricing.enterprise')}}</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/{{ $t('pricing.monthly') }}</small></h1>
+            <h1 class="card-title pricing-card-title">$99<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li v-for="item in 4">
                 {{ $t(`pricing.enterprise_policy.${item - 1}`) }}
